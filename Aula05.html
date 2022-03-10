@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model </title>
+    <style>
+        body{
+            background-color: rgb(68, 125,199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inciando Estudo de DOM</h1>
+    <p>Aqui Vai oo Resultado.</p>
+    <p>Aprendendo a usar o  <strong>DOM</strong> em JavaScript</p>
+    <div id="bvsc">Rumo a Mundo de Sucesso</div>
+    <script>
+        window.document.write(window.document.URL)//Mostra URL dentro de Body
+        window.document.write("</br> tudo se Encontra Aqui</br>")
+        window.document.write(window.document.charset)
+
+        //Usanca a MARCA-getElementsByTagName
+       /// var corpo = window.document.body
+       // let p1 = window.document.getElementsByTagName('p')[1]
+       // corpo.style.backgroundColor='Red'
+       // window.document.write('Esá escrito assim'+p1.innerText)
+        // p1.style.color='black'
+         //window.prompt(p1.innerText)
+
+         //USANDO ID DA DIV
+         //let div = window.document.getElementById('bvsc')
+        // div.innerText='Estou indo'
+         //div.style.backgroundColor='gray'
+         //window.prompt(div.innerText)
+
+
+         //Usando Nome
+         /*var caca = window.document.getElementsByName
+         window.prompt(caca.innerText)*/
+
+         var b = window.document.querySelector('div#bvsc')
+         b.style.background='pink'
+
+    </script>
+    <h1></h1>
+</body>
+</html>
